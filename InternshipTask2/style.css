@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f3ff;
+    color: #252044;
+    line-height: 1.6;
+}
+
+header {
+    background: #35246b;
+    padding: 18px 8%;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #ffd166;
+}
+
+nav ul {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #7656d6, #e6a4c8);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.btn, button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 24px;
+    background: #ffd166;
+    color: #35246b;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #5a3db8;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px 45px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px #35246b20;
+    font-weight: bold;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input, textarea {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 0;
+}
+
+#response {
+    margin-top: 15px;
+    color: #287a43;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #35246b;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
